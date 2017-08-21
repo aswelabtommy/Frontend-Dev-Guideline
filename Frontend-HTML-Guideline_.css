@@ -1,0 +1,355 @@
+@charset "utf-8";
+/***********************************************
+	Reset CSS
+************************************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+body {
+	line-height: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #999;
+	margin: 20px 0;
+	padding: 0;
+}
+input, select {
+	vertical-align: middle;
+}
+del {
+	text-decoration: line-through;
+}
+/* Misc style */
+table, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+}
+input, select, textarea {
+	font-family: "Raleway", sans-serif;
+}
+/* Reset input, select, textarea fonts */
+.clearfix {
+	display: inline-block;
+}
+.clearfix:after {
+	content: " ";
+	display: block;
+	height: 0;
+	clear: both;
+	font-size: 0;
+	visibility: hidden;
+}
+.clearfix {
+	display: block;
+}
+/***********************************************
+	Body CSS
+************************************************/
+body {
+	font-family: "Raleway", arial, sans-serif;
+	font-size: 16px;
+	color: #333;
+	background: #fff;
+}
+a {
+	color: #006494;
+	text-decoration: none;
+}
+a:hover {
+	color: #13293D;
+	text-decoration: underline;
+}
+hr {
+	border: none;
+	border-bottom: 1px #ddd dotted;
+	height: 1px;
+	margin: 30px 20px;
+	padding: 0;
+}
+
+.mr30 {
+	margin-right: 30px;
+}
+
+.mt30 {
+	margin-top: 30px;
+}
+
+header {
+	color: #fff;
+	background: #13293D;
+	margin: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+}
+header article {
+	padding: 30vh 0;
+	line-height: 3vw;
+}
+header h1  {
+	font-size: 4vw;
+	font-weight: 500;
+}
+header h1 span {
+	font-size: 2vw;
+}
+header h2 {
+	font-size: 2vw;
+	color: #E8F1F2;
+}
+header h3 {
+	font-size: 4vw;
+	color: #fff;
+	margin: 0 0 60px 0;
+	font-weight: 700;
+	letter-spacing: 0.1vw;
+}
+header h3 strong {
+	font-weight: 700;
+}
+header aside {
+	margin: 60px 0 0 0;
+}
+header aside i {
+	font-family: fontastic;
+	font-size: 6vw;
+	color: #fff;
+}
+
+nav {
+	margin: 30px 30px 0 30px;
+	line-height: 26px;
+}
+nav h1 {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0 0 5px 0;
+}
+nav ul li {
+	font-weight: 500;
+}
+nav ul li ul li {
+	margin: 0 0 0 20px;
+}
+nav ul li ul li a {
+	margin: 0;
+	font-size: 14px;
+	color: #3e3f4f;
+}
+nav h1 i {
+	float: left;
+	margin: 2px 10px 0 0;
+}
+
+#global {
+	width: 980px;
+	margin: 0 auto;
+}
+
+section {
+	padding: 0 30px;
+	line-height: 26px;
+}
+section h2 {
+	margin: 0 0 20px 0;
+	font-weight: 600;
+	color: #13293D;
+	font-size: 20px;
+}
+section ul.developmentGuide {
+	margin: 0 0 0 30px;
+}
+section ul.developmentGuide li {
+	margin: 0;
+	padding: 0 0 5px 0;
+	list-style-type: decimal;
+	line-height: 26px;
+}
+section article {
+	margin: 0 0 30px 10px;
+}
+section article h3 {
+	font-weight: 500;
+	font-size: 18px;
+	margin: 0 0 10px 0;
+}
+section article h4 {
+	margin: 0 0 10px 0;
+}
+section article p {
+	margin: 0 0 10px 10px;
+	line-height: 26px;
+}
+section pre {
+	font-family: 'Source Code Pro', serif;
+	border: 1px #ccc solid;
+	margin: 0 0 20px 0;
+	padding: 10px;
+	background: #fafafa;
+}
+.recommended {
+	color: #2cb300;
+	font-weight: 500;
+}
+aside.recommended {
+	border: 1px #2cb300 solid;
+	padding: 10px;
+	font-weight: normal;
+}
+h4.recommended .icon-thumbs-o-up {
+	float: left;
+	margin: 2px 10px 0 0;
+	font-size: 20px;
+}
+
+.not-recommended {
+	color: #D90429;
+	font-weight: 500;
+}
+aside.not-recommended {
+	border: 1px #CB0003 solid;
+	padding: 10px;
+	font-weight: normal;
+	margin: 0 0 20px 0;
+}
+
+h4.not-recommended .icon-thumbs-o-down {
+	float: left;
+	margin: 2px 10px 0 0;
+	font-size: 20px;
+}
+
+
+#End-of article {
+	font-size: 16px;
+	margin: 100px auto;
+	text-align: center;
+}
+#AS-Watson article {
+	font-size: 16px;
+	margin: 100px auto;
+	text-align: center;
+}
+#AS-Watson article p {
+	margin: 0;
+}
+
+#AS-Watson article p:first-child {
+	color: #e31836
+}
+#AS-Watson span.logo {
+	margin: 20px 0 0 0;
+	font-weight: 600;
+	font-size: 28px;
+	background: #009da8;
+	display: inline-block;
+	color: #fff;
+	padding: 5px 25px;
+	border-radius: 25px 0px;
+	border-bottom: 4px #ff0d0d solid;
+}
+
+.intro h2.title.sec {
+	margin: 20px 0;
+}
+
+.redOne {
+	color: #FF0000;
+	font-weight: 600;
+}
+.redTwo {
+	color: #C00000;
+	font-weight: 600;
+}
+
+table.crossBrowsers {
+	display: block;
+	width: 100%;
+	overflow: auto;
+	word-break: normal;
+	word-break: keep-all;
+	margin: 0 0 30px 0;
+}
+table.crossBrowsers th {
+	font-weight: bold;
+	text-align: left;
+}
+table.crossBrowsers th, table.crossBrowsers td {
+	padding: 6px 13px;
+	border: 1px solid #ddd;
+}
+table.crossBrowsers tr {
+	background-color: #fff;
+	border-top: 1px solid #ccc;
+}
+table.crossBrowsers tr:nth-child(2n) {
+	background-color: #f8f8f8;
+}
+
+.notedStar {
+	font-size: 30px;
+	float: left;
+}
+
+.crossBrowsersRanges {
+	margin: 0 0 30px 0;
+}
+
+sup {
+	font-size: 13px;
+	padding: 0 0 0 1px;
+	color: #d90429;
+	vertical-align: super;
+}
+
+#back-to-top {
+	
+	display: block;
+	color: #13293d;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+}
+
+
+
+
+
